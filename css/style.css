@@ -1,0 +1,646 @@
+* {
+    font-family: "Raleway", sans-serif;
+}
+.conteneur {
+    margin:auto ;
+    width: 90%;
+}
+
+    /* Header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.centrer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav span{
+    color: #0065FC;
+    
+}
+nav img{ 
+    height: 60px;
+}
+.menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+nav li{
+    margin:0 10px 0 20px;
+    padding-left: 10px;
+}
+.bordure-hebergements span{
+    padding: 20px;
+    border-top: 1px solid #0065FC;
+  
+}
+
+/* Main */
+
+/* SEJOUR*/
+.bordure-recherche{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 300px;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+}
+.bordure-recherche-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.icon-map{
+    height:30px;
+    width:30px;
+    border-radius: 10px 0 0 10px;
+    background-color: #F2F2F2;
+    padding: 10px 0 0 15px;
+    
+}
+
+.fa-map-marker-alt{
+    font-size: small;
+    margin-right: 15px;
+}
+.fa-search{
+    font-size: small;
+}
+.lieu{
+    
+    height:30px;
+    width:140px;
+    font-weight: bold;
+    border: 0px;
+}
+.bouton-recherche-mobile{
+    height: 30px;
+    width: 30px;
+    color:white;
+    font-weight:bold;
+    border-radius: 15px;
+    background-color: #0065FC;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 0 10px;
+}
+.bouton-recherche{
+    height: 30px;
+    width: 100px;
+    color:white;
+    font-weight:bold;
+    border-radius: 0 10px 10px 0;
+    background-color: #0065FC;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 0 10px;
+}
+
+/*CHOIX SEJOURS */
+
+.filtres {
+ display: flex;
+ align-items: center;
+}
+.filtres-séjours{
+    margin-right: 10px;
+}
+    
+.choix-sejours {
+    
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.filtretexte{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.filtres1{
+    display:flex;
+}
+.filtres2{
+    display:flex;
+}
+.Filtres-séjours{
+    margin-right: 20px;
+}
+.texte-icons{
+    height: 40px;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.filtre-icons{
+    border-radius: 20px;
+    width: 42px;
+    height: 42px;
+    background-color:#DEEBFF ;
+    color :#0065FC;
+}
+.texte-icons:hover {
+    background-color :#0065FC;
+    color: white;
+}
+.espace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* INFORMATIONS */
+.info-logement {
+    display:flex;
+    align-items: center;
+    
+}
+.icon-info{
+    width:20px;
+    height: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px; 
+    margin-right: 5px;
+}
+.fa-info{
+    color :#0065FC;
+    align-items: center;
+    font-size: small;
+}
+
+.fa-star{
+    color: #0065FC;
+}
+.autre-star{
+    color: #F2F2F2;
+}
+
+
+
+/* HEBERGEMENTS */
+a{
+    color: black;  
+    text-decoration: none;
+}
+a:hover 
+{
+   color: #0065FC;
+}
+/* LISTES HEBERGEMENTS VILLE */
+#locations {
+    display: flex;
+    gap: 15px;
+    flex-basis: 100%
+}
+
+#locations .hebergements{
+   
+    gap: 16px;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #F2F2F2;
+    flex-basis: 62%;
+}
+
+.liste-hebergements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+    margin-bottom: 15px;
+}
+
+.hebergements a{
+    font-weight: bold;
+}
+.carte-hebergements{
+    width: 25%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0 0 15px #0000002e;
+    flex-grow: 1;
+    
+}
+.carte-hebergements img{
+    border-radius: 15px 15px 0 0;
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 0;
+}
+.carte-hebergements .fa-star{
+    font-size: small;
+}
+.carte-hebergements span{
+    font-weight: lighter ;
+}
+.texte-image{
+    margin: 10px;
+}
+/* POPULAIRES*/
+#locations .populaires{
+    
+    gap: 16px;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #F2F2F2;
+    flex-basis: 37%;
+}
+.flex-populaires{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.iconpopulaires{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px ;
+    
+}
+.hotelpopulaires{
+    width: 90%;
+    height: 160px;
+    background-color: white;
+    padding: 5px ;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    border-radius: 25px;
+}
+.imagehotel{
+    float: left;
+    width: 45%;
+    height: 100%;
+    margin:  0 20px 0 0;
+    border-radius: 20px 0 0 20px ;
+}
+.hotelpopulaires .etoile{
+    font-size: small;
+    line-height: 75px;
+ }
+ .hotelpopulaires p{
+     font-size: small;
+     line-height: 5px;
+  }
+  /*Main activités */
+
+#activitess h3{
+    line-height: 10px;
+}
+.activites{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    border-radius:10px;
+    
+}
+.mini-haut{
+    width: 100%;
+    height: 190px;
+    background-color: white;
+    border: 3px solid #F2F2F2;
+    border-radius: 30px;
+    text-align: left;
+  
+}
+.mini-bas{
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    border: 3px solid #F2F2F2;
+    border-radius: 30px;
+    text-align: left;
+    
+}
+.image-max{
+    width: 100%;
+    height: 330px;
+    border-radius: 25px 25px 0 0;
+    
+}
+.image-min{
+    width: 100%;
+    height: 70%;
+    border-radius: 25px 25px 0 0;
+    
+}
+.choix-activites{
+    padding-top: 20px;
+}
+.activites1{
+    flex:1;
+    height:400px;
+    margin-right: 20px;
+	border-radius: 30px;
+    border: 3px solid #F2F2F2;
+    border-radius: 30px;
+    
+}
+
+.activites2{
+    flex:1;
+    height:400px;
+	border-radius: 30px;
+    margin-right: 20px;
+    
+}
+.activites3{
+    flex:1;
+    height:400px;
+	margin-right: 20px;
+    border: 3px solid #F2F2F2;
+    border-radius: 30px;
+    text-align: left;
+    margin-left: 10px;
+}
+.activites4{
+    flex:1;
+    height:400px;
+	border-radius:30px;
+}
+.activites h4{
+    margin-left: 20px;
+        
+}
+
+/*Footer */
+footer {
+	background-color: #F2F2F2;
+    width: 110%;
+    height: 150px;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin:0 0 0 -5%;
+ }
+
+#footerContent {
+	width: 70%;
+    margin:0 10px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+footer ul{
+    list-style: none;
+    margin:0 10px 0 -40px;
+    color: rgb(100, 100, 94);
+}
+.footerColumn h3 {
+	color: black;
+	margin-top: 30px;    
+    font-size: 1.0em;
+    font-weight: bold;
+    align-self: auto;
+} 
+   
+.footerColumn li{
+    margin-left:0;
+}
+
+ 
+/*RESPONSIVE */
+@media  screen and (max-width:992px) {
+    .conteneur {
+        margin:auto ;
+        width: 90%;
+    }
+    #locations{
+        flex-basis: 100%;
+        flex-direction: column-reverse;
+    }
+    #locations .hebergements{
+        flex-basis: 100%;
+    }
+    #locations .populaires{
+        flex-basis: 100%;
+        flex-direction: row;
+    }
+    .liste-hebergements{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+             
+    }
+  
+    .carte-hebergements{
+        flex-basis: 40%;
+        gap: 16px;
+    }
+    .flex-populaires{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+            
+    }
+    .hotelpopulaires{
+        flex-basis: 29%;
+    }
+    .hotelpopulaires h4{
+        font-size: small;
+      
+     }
+    .hotelpopulaires .etoile{
+        font-size: x-small;
+        line-height: 80px;
+     }
+     .hotelpopulaires p{
+         font-size: x-small;
+         line-height: 5px;
+      }
+      .activites-nature1{
+        flex-direction: column;
+           
+    }
+    .activites{
+        flex-basis: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .activites1{
+        flex-basis: 45%;
+        margin-left:10px ;
+        margin-bottom: 20px;
+       
+    }
+    .activites2{
+        flex-basis: 45%;
+        margin-right:10px ;
+        margin-bottom: 10px;
+             
+    }
+    .activites3{
+        flex-basis: 35%;
+        
+       
+    }
+    .activites4{
+        flex-basis:  35%;
+        
+             
+    }
+ }
+
+@media  screen and (max-width:768px) {
+    .conteneur{
+		width: 100%;
+	}
+    .navigation{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo{
+        
+        justify-content: center;
+    }
+    .menu{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .bordure-hebergements{
+        padding: 17px;
+        border-bottom: 3px solid #0065FC;
+    }
+    .bordure-hebergements span{
+        border: hidden;
+            
+    }
+    .bordure-menu{
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    .bordure-recherche{
+        width: 100%;
+        justify-content: left;
+        visibility: hidden;
+    }
+    .bordure-recherche-mobile{
+        width: 100%;
+        justify-content: space-between;
+        visibility: visible;
+        
+    }
+        
+    .filtres{
+        flex-wrap: wrap;
+    }
+    .choix-sejours{
+        width: 100%;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .filtres1{
+        width: 100%;
+        justify-content: left;
+        
+    }
+    .filtres2{
+        width: 100%;
+        flex-wrap: wrap;
+        float: left;
+    }
+    .texte-icons{
+       margin-top: 10px;
+    }
+    
+    #locations{
+        flex-direction: column-reverse;
+        flex-basis: 100%;
+    }
+    #locations .hebergements{
+        flex-basis: 100%;
+        
+    }
+    #locations .populaires{
+        flex-direction: column;
+        flex-basis: 100%;
+               
+    }
+    .carte-hebergements{
+        flex-basis: 100%;
+        
+    }
+    .hotelpopulaires{
+        flex-basis: 100%;
+      
+    }
+    
+	.activites{
+		width: 98%;
+		flex-direction:column;
+		justify-content: space-evenly;
+        margin-left: 0 ;
+        		
+	}
+	.activites1{
+		width: 98%;
+		justify-content: center;
+        margin-right: 10px;
+        
+        
+	}
+	.activites2{
+		width: 98%;
+		justify-content: center;
+        margin-left: 10px ;
+	}
+	.activites3{
+		width: 98%;
+		justify-content: center;
+		margin-top:20px;
+	    margin-left: 10px ;
+	}
+	.activites4{
+		width: 98%;
+		justify-content: center;
+        margin-left: 10px ;
+		
+	}
+	.image-max{
+		width:100%;
+		margin: auto;
+		
+	}
+	.mini-haut{
+		margin-top:20px;
+	}
+	.activites2.mini-bas{
+		margin-bottom:20px;
+	}
+
+	footer{
+		width: 100%;
+        height: auto;
+		margin: 0 auto;
+        margin-top:40px;
+	}
+    #footerContent{
+        display:inline-block;
+    }
+  
+    
+}
